@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="month <= 7.5\nmse = 25.2835\nsamples = 8244\nvalue = 11.8025"] ;
+1 [label="demand_general <= 4.5\nmse = 16.5351\nsamples = 5095\nvalue = 10.5651"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="month <= 1.5\nmse = 14.2414\nsamples = 4338\nvalue = 9.9981"] ;
+1 -> 2 ;
+3 [label="mse = 48.9199\nsamples = 483\nvalue = 13.1974"] ;
+2 -> 3 ;
+4 [label="mse = 8.4533\nsamples = 3855\nvalue = 9.5972"] ;
+2 -> 4 ;
+5 [label="month <= 1.5\nmse = 17.2801\nsamples = 757\nvalue = 13.8142"] ;
+1 -> 5 ;
+6 [label="mse = 40.1283\nsamples = 95\nvalue = 19.8756"] ;
+5 -> 6 ;
+7 [label="mse = 7.9722\nsamples = 662\nvalue = 12.9444"] ;
+5 -> 7 ;
+8 [label="season <= 2014.5\nmse = 32.9521\nsamples = 3149\nvalue = 13.8047"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="season <= 2012.5\nmse = 21.8075\nsamples = 2296\nvalue = 11.9714"] ;
+8 -> 9 ;
+10 [label="mse = 3.7919\nsamples = 801\nvalue = 8.843"] ;
+9 -> 10 ;
+11 [label="mse = 23.4064\nsamples = 1495\nvalue = 13.6476"] ;
+9 -> 11 ;
+12 [label="variety <= 0.5\nmse = 29.5557\nsamples = 853\nvalue = 18.7391"] ;
+8 -> 12 ;
+13 [label="mse = 15.6852\nsamples = 447\nvalue = 16.3068"] ;
+12 -> 13 ;
+14 [label="mse = 31.1425\nsamples = 406\nvalue = 21.4169"] ;
+12 -> 14 ;
+}
